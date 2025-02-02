@@ -34,10 +34,19 @@ function shunchaki(ism = "Asilbek") {
 }
 console.log(shunchaki("farruxbek"));
 console.log(shunchaki());
-
-// 3-misol
-
-
-
-
-//# sourceMappingURL=index.js.map
+let kopaytir = function (son1, son2) {
+    return son1 * son2;
+};
+console.log(kopaytir(12, 12));
+console.log('asilbek');
+function add(x, y) {
+    if (typeof x === "number" && typeof y === "number") {
+        return x * y;
+    }
+    if (typeof x === "string" && typeof y === "string") {
+        return x + y;
+    }
+    throw new Error("nato'g'ri malumot kiritildi");
+}
+console.log(add(5, 10));
+console.log(add("tatuff, ", "Tatu"));

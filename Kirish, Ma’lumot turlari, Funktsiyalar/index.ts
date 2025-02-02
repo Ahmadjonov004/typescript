@@ -66,6 +66,36 @@ console.log(kopaytir(12, 12));
 console.log('asilbek')
 
 
+// !! 3-misol
+
+function add(x: number, y: number): number;
+function add(x: string, y: string): string;
+
+function add(x: number | string, y: number | string): number | string {
+  if (typeof x === "number" && typeof y === "number") {
+    return x * y;
+  }
+  if (typeof x === "string" && typeof y === "string") {
+    return x + y;
+  }
+  throw new Error("nato'g'ri malumot kiritildi");
+}
+
+console.log(add(5, 10));    
+console.log(add("tatuff, ", "Tatu"));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
