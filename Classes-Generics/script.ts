@@ -312,4 +312,5 @@ interface Task {
   const manager = new TaskManager();
   manager.addTask(task1);
   manager.showTasks();
+// !! misollarni endi yangidan ishlab chiqamiz
 
